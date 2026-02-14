@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google AI Pro | 2 TB | Dapatkan Invite Link</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --md-primary: #1a73e8;
+            --md-primary-container: #d3e3fd;
+            --md-on-primary: #ffffff;
+            --md-on-primary-container: #041e49;
+            --md-secondary: #a259ff;
+            --md-secondary-container: #f3e8fd;
+            --md-tertiary: #34a853;
+            --md-tertiary-container: #e6f4ea;
+            --md-error: #ea4335;
+            --md-error-container: #fce8e6;
+            --md-surface: #fefefe;
+            --md-surface-dim: #f8f9fa;
+            --md-surface-container: #f1f3f4;
+            --md-surface-container-high: #e8eaed;
+            --md-surface-variant: #e1e3e1;
+            --md-on-surface: #1f1f1f;
+            --md-on-surface-variant: #5f6368;
+            --md-outline: #dadce0;
+            --md-outline-variant: #c4c7c5;
+            --google-blue: #1a73e8;
+            --google-red: #ea4335;
+            --google-yellow: #fbbc05;
+            --google-green: #34a853;
+            --md-elevation-1: 0 1px 2px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.1);
+            --md-elevation-2: 0 1px 2px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.1);
+            --md-elevation-3: 0 4px 8px rgba(0,0,0,0.06), 0 2px 12px rgba(0,0,0,0.08);
+            --md-elevation-4: 0 6px 10px rgba(0,0,0,0.08), 0 2px 18px rgba(0,0,0,0.1);
+            --md-shape-xs: 8px;
+            --md-shape-sm: 12px;
+            --md-shape-md: 16px;
+            --md-shape-lg: 20px;
+            --md-shape-xl: 28px;
+            --md-shape-full: 9999px;
+            --md-motion-standard: cubic-bezier(0.2, 0, 0, 1);
+            --md-motion-emphasized: cubic-bezier(0.05, 0.7, 0.1, 1);
+            --md-motion-emphasized-decel: cubic-bezier(0.0, 0.0, 0.0, 1.0);
+            --md-motion-duration-short: 200ms;
+            --md-motion-duration-medium: 400ms;
+            --md-motion-duration-long: 600ms;
+            --md-motion-duration-extra-long: 800ms;
+            --gradient-start: #e8f0fe;
+            --gradient-end: #f0e6ff;
+            --shadow-floating: 0 4px 8px 3px rgba(60,64,67,0.15), 0 1px 3px rgba(60,64,67,0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Google Sans', 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+            color: var(--md-on-surface);
+            background: var(--md-surface);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ============================================
+           SCROLL REVEAL
+           ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition:
+                opacity var(--md-motion-duration-long) var(--md-motion-emphasized),
+                transform var(--md-motion-duration-long) var(--md-motion-emphasized);
+        }
+        .reveal.revealed { opacity: 1; transform: translateY(0); }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition:
+                opacity var(--md-motion-duration-long) var(--md-motion-emphasized),
+                transform var(--md-motion-duration-long) var(--md-motion-emphasized);
+        }
+        .reveal-scale.revealed { opacity: 1; transform: scale(1); }
+
+        .stagger-1 { transition-delay: 0ms; }
+        .stagger-2 { transition-delay: 80ms; }
+        .stagger-3 { transition-delay: 160ms; }
+        .stagger-4 { transition-delay: 240ms; }
+        .stagger-5 { transition-delay: 320ms; }
+        .stagger-6 { transition-delay: 400ms; }
+        .stagger-7 { transition-delay: 480ms; }
+        .stagger-8 { transition-delay: 560ms; }
+        .stagger-9 { transition-delay: 640ms; }
+        .stagger-10 { transition-delay: 720ms; }
+        .stagger-11 { transition-delay: 800ms; }
+
+        /* ============================================
+           NAVBAR
+           ============================================ */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 40px;
+            background: rgba(254, 254, 254, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--md-outline);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: box-shadow var(--md-motion-duration-medium) var(--md-motion-standard);
+        }
+        .navbar.scrolled { box-shadow: var(--md-elevation-2); }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--md-on-surface);
+            text-decoration: none;
+        }
+        .navbar-logo .google-colors span:nth-child(1) { color: var(--google-blue); }
+        .navbar-logo .google-colors span:nth-child(2) { color: var(--google-red); }
+        .navbar-logo .google-colors span:nth-child(3) { color: var(--google-yellow); }
+        .navbar-logo .google-colors span:nth-child(4) { color: var(--google-blue); }
+        .navbar-logo .google-colors span:nth-child(5) { color: var(--google-green); }
+        .navbar-logo .google-colors span:nth-child(6) { color: var(--google-red); }
+
+        .navbar-logo .ai-text {
+            font-weight: 400; font-size: 20px;
+            color: var(--md-on-surface-variant);
+            margin-left: 2px; letter-spacing: -0.3px;
+        }
+        .navbar-logo .pro-badge {
+            display: inline-flex; align-items: center;
+            background: linear-gradient(135deg, #4285f4, #a259ff);
+            color: white; padding: 3px 12px; border-radius: var(--md-shape-xs);
+            font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
+            text-transform: uppercase; margin-left: 4px;
+            position: relative; top: -1px;
+        }
+
+        .navbar-center { display: flex; align-items: center; gap: 4px; }
+        .nav-link {
+            text-decoration: none; color: var(--md-on-surface-variant);
+            font-size: 14px; font-weight: 500; padding: 8px 16px;
+            border-radius: var(--md-shape-full);
+            transition: background var(--md-motion-duration-short) var(--md-motion-standard),
+                        color var(--md-motion-duration-short) var(--md-motion-standard);
+        }
+        .nav-link:hover { background: var(--md-primary-container); color: var(--md-primary); }
+        .nav-link:active { background: #c2d9f7; }
+
+        /* ============================================
+           NAVBAR CTA — ANIMATED
+           ============================================ */
+        .navbar-cta-wrapper { position: relative; display: inline-flex; align-items: center; }
+        .navbar-cta {
+            background: linear-gradient(135deg, #4285f4, #7c3aed);
+            color: var(--md-on-primary); border: none; padding: 10px 24px;
+            border-radius: var(--md-shape-full); font-size: 14px; font-weight: 500;
+            cursor: pointer; text-decoration: none; display: inline-flex;
+            align-items: center; gap: 8px; position: relative; overflow: hidden;
+            transition: box-shadow var(--md-motion-duration-short) var(--md-motion-standard),
+                        transform var(--md-motion-duration-short) var(--md-motion-emphasized);
+            animation: ctaGlow 3s ease-in-out infinite;
+        }
+        @keyframes ctaGlow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(66,133,244,0.4); }
+            50% { box-shadow: 0 0 0 8px rgba(66,133,244,0); }
+        }
+        .navbar-cta:hover { box-shadow: 0 4px 16px rgba(66,133,244,0.4); transform: scale(1.04); }
+        .navbar-cta:active { transform: scale(0.96); }
+        .navbar-cta::before {
+            content: ''; position: absolute; top: 0; left: -100%;
+            width: 60%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        @keyframes shimmer { 0% { left: -100%; } 50% { left: 150%; } 100% { left: 150%; } }
+
+        .cta-text-carousel { display: inline-flex; flex-direction: column; height: 20px; overflow: hidden; }
+        .cta-text-carousel .cta-text-slide {
+            height: 20px; line-height: 20px; white-space: nowrap;
+            animation: textSlide 4s var(--md-motion-emphasized) infinite;
+        }
+        @keyframes textSlide {
+            0%, 40% { transform: translateY(0); }
+            50%, 90% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .navbar-limited-badge {
+            position: absolute; top: -10px; right: -8px;
+            background: var(--md-error); color: white;
+            font-size: 9px; font-weight: 700; padding: 2px 7px;
+            border-radius: var(--md-shape-full); letter-spacing: 0.8px;
+            text-transform: uppercase;
+            animation: limitedPop 2s ease-in-out infinite;
+            box-shadow: 0 2px 8px rgba(234,67,53,0.4); z-index: 2;
+        }
+        @keyframes limitedPop {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.12) rotate(-2deg); }
+            50% { transform: scale(1) rotate(0deg); }
+            75% { transform: scale(1.08) rotate(2deg); }
+        }
+
+        .nav-toggle {
+            display: none; background: none; border: none;
+            font-size: 24px; color: var(--md-on-surface-variant); cursor: pointer; padding: 4px;
+        }
+
+        /* ============================================
+           HERO
+           ============================================ */
+        .hero {
+            text-align: center; padding: 80px 24px 60px;
+            background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 50%, var(--md-surface) 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before, .hero::after {
+            content: ''; position: absolute; border-radius: 50%;
+            filter: blur(80px); opacity: 0.4; animation: float 8s ease-in-out infinite;
+        }
+        .hero::before { width: 400px; height: 400px; background: var(--md-primary-container); top: -100px; left: -100px; }
+        .hero::after { width: 350px; height: 350px; background: var(--md-secondary-container); bottom: -80px; right: -80px; animation-delay: -4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            33% { transform: translate(30px,-20px) scale(1.05); }
+            66% { transform: translate(-20px,15px) scale(0.95); }
+        }
+
+        .hero > * { position: relative; z-index: 1; }
+
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: linear-gradient(135deg, #4285f4, #a259ff); color: white;
+            padding: 6px 20px; border-radius: var(--md-shape-full);
+            font-size: 13px; font-weight: 500; margin-bottom: 24px; letter-spacing: 0.5px;
+            animation: badgePulse 3s ease-in-out infinite;
+        }
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(66,133,244,0.3); }
+            50% { box-shadow: 0 0 0 12px rgba(66,133,244,0); }
+        }
+
+        .hero h1 { font-size: clamp(36px,5vw,56px); font-weight: 700; line-height: 1.15; margin-bottom: 20px; }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #4285f4, #a259ff, #ea4335);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .hero p { font-size: 18px; color: var(--md-on-surface-variant); max-width: 640px; margin: 0 auto; line-height: 1.7; }
+
+        /* ============================================
+           BUTTONS
+           ============================================ */
+        .btn-whatsapp {
+            background: #25d366; color: white; border: none;
+            padding: 16px 36px; border-radius: var(--md-shape-full);
+            font-size: 17px; font-weight: 500; cursor: pointer;
+            text-decoration: none; display: inline-flex;
+            align-items: center; justify-content: center; gap: 10px; width: 100%;
+            transition: box-shadow var(--md-motion-duration-medium) var(--md-motion-emphasized),
+                        transform var(--md-motion-duration-short) var(--md-motion-emphasized),
+                        background var(--md-motion-duration-short) var(--md-motion-standard);
+        }
+        .btn-whatsapp:hover { background: #1ebe5d; box-shadow: 0 4px 14px rgba(37,211,102,0.4); transform: scale(1.03); }
+        .btn-whatsapp:active { transform: scale(0.97); }
+
+        /* ============================================
+           STATS BAR
+           ============================================ */
+        .stats-bar {
+            display: flex; justify-content: center; gap: 48px; padding: 36px 24px;
+            border-top: 1px solid var(--md-outline); border-bottom: 1px solid var(--md-outline);
+            background: var(--md-surface); flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; transition: transform var(--md-motion-duration-medium) var(--md-motion-emphasized); }
+        .stat-item:hover { transform: scale(1.08); }
+        .stat-item .number { font-size: 28px; font-weight: 700; color: var(--md-primary); }
+        .stat-item .label { font-size: 13px; color: var(--md-on-surface-variant); margin-top: 4px; }
+
+        /* ============================================
+           FEATURES — BENTO GRID
+           ============================================ */
+        .features-section { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+        .features-section .section-title { text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+        .features-section .section-subtitle {
+            text-align: center; font-size: 16px; color: var(--md-on-surface-variant);
+            margin-bottom: 56px; max-width: 560px; margin-left: auto; margin-right: auto;
+        }
+
+        .bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+        .bento-card {
+            background: var(--md-surface-dim); padding: 32px; border-radius: 24px;
+            position: relative; overflow: hidden;
+            transition: box-shadow var(--md-motion-duration-medium) var(--md-motion-emphasized),
+                        transform var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        .bento-card:hover { box-shadow: var(--md-elevation-3); transform: translateY(-4px); }
+        .bento-card:active { transform: translateY(-1px); box-shadow: var(--md-elevation-1); }
+        .bento-card .card-content { position: relative; z-index: 2; }
+
+        .bento-card .card-icon {
+            width: 48px; height: 48px; border-radius: var(--md-shape-sm);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; margin-bottom: 20px; box-shadow: var(--md-elevation-1);
+            transition: transform var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        .bento-card:hover .card-icon { transform: scale(1.1) rotate(-3deg); }
+
+        .card-icon.icon-white { background: white; color: var(--md-primary); }
+        .card-icon.icon-gradient { background: linear-gradient(135deg, #4285f4, #7c3aed); color: white; }
+        .card-icon.icon-white-pink { background: white; color: #ec4899; }
+        .card-icon.icon-white-indigo { background: white; color: #6366f1; }
+        .card-icon.icon-white-green { background: white; color: var(--md-tertiary); }
+        .card-icon.icon-white-red { background: white; color: var(--md-error); }
+        .card-icon.icon-white-teal { background: white; color: #00838f; }
+
+        .bento-card h3 { font-size: 20px; font-weight: 700; color: var(--md-on-surface); margin-bottom: 8px; }
+        .bento-card p { font-size: 14px; color: var(--md-on-surface-variant); line-height: 1.65; }
+        .bento-card .tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #4285f4, #a259ff); color: white;
+            padding: 3px 10px; border-radius: var(--md-shape-full);
+            font-size: 11px; font-weight: 500; margin-bottom: 12px;
+        }
+
+        .bento-card.card-large { grid-column: span 2; }
+        .bento-card.card-large h3 { font-size: 24px; }
+        .bento-card.card-large p { font-size: 15px; max-width: 480px; }
+
+        .bento-card .card-bg-icon {
+            position: absolute; right: -20px; bottom: -20px; font-size: 180px;
+            color: var(--md-on-surface); opacity: 0.06; z-index: 1;
+            transition: transform var(--md-motion-duration-long) var(--md-motion-emphasized);
+            pointer-events: none;
+        }
+        .bento-card:hover .card-bg-icon { transform: scale(1.1); }
+        .bento-card.card-accent { border: 1px solid var(--md-primary-container); }
+
+        .mini-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+        .mini-card {
+            display: flex; align-items: center; gap: 12px; padding: 16px;
+            background: var(--md-surface-dim); border-radius: var(--md-shape-sm);
+            transition: background var(--md-motion-duration-short) var(--md-motion-standard),
+                        transform var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        .mini-card:hover { background: var(--md-primary-container); transform: translateY(-2px); }
+        .mini-card i { color: var(--md-primary); font-size: 20px; flex-shrink: 0; }
+        .mini-card span { font-size: 13px; font-weight: 500; color: var(--md-on-surface); line-height: 1.4; }
+
+        /* ============================================
+           HOW IT WORKS
+           ============================================ */
+        .how-section { padding: 80px 24px; background: var(--md-surface); border-top: 1px solid var(--md-outline); }
+        .how-section .section-header { text-align: center; margin-bottom: 64px; }
+        .how-section .section-title { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+        .how-section .section-subtitle { font-size: 16px; color: var(--md-on-surface-variant); }
+
+        .steps-wrapper { position: relative; max-width: 960px; margin: 0 auto; }
+
+        .steps-line {
+            display: none; position: absolute; top: 48px; left: 16%; right: 16%;
+            height: 2px; background: var(--md-outline); z-index: 0;
+        }
+        .steps-line::after {
+            content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 0;
+            background: linear-gradient(90deg, var(--md-primary), var(--md-secondary));
+            border-radius: 2px; transition: width 1.2s var(--md-motion-emphasized);
+        }
+        .steps-line.animate::after { width: 100%; }
+
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; z-index: 1; }
+        .step { text-align: center; }
+
+        .step-icon-wrapper {
+            width: 96px; height: 96px; margin: 0 auto 24px; border-radius: 50%;
+            background: var(--md-surface); border: 4px solid rgba(26,115,232,0.12);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: var(--md-elevation-1); position: relative;
+            transition: border-color var(--md-motion-duration-medium) var(--md-motion-emphasized),
+                        box-shadow var(--md-motion-duration-medium) var(--md-motion-emphasized),
+                        transform var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        .step:hover .step-icon-wrapper { border-color: rgba(26,115,232,0.35); box-shadow: var(--md-elevation-3); transform: scale(1.08); }
+        .step-icon-wrapper i { font-size: 36px; color: var(--md-primary); transition: transform var(--md-motion-duration-medium) var(--md-motion-emphasized); }
+        .step:hover .step-icon-wrapper i { transform: scale(1.1); }
+
+        .step-icon-wrapper .step-badge {
+            position: absolute; top: -4px; right: -4px; width: 28px; height: 28px;
+            border-radius: 50%; background: var(--md-primary); color: var(--md-on-primary);
+            font-size: 13px; font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: var(--md-elevation-2);
+        }
+        .step h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; color: var(--md-on-surface); }
+        .step p { font-size: 14px; color: var(--md-on-surface-variant); line-height: 1.65; max-width: 260px; margin: 0 auto; }
+
+        @media (min-width: 769px) { .steps-line { display: block; } }
+
+        /* ============================================
+           PRICING SECTION
+           ============================================ */
+        .pricing-section {
+            padding: 96px 24px;
+            background: var(--md-surface-dim);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-dot-pattern {
+            position: absolute; inset: 0;
+            background-image: radial-gradient(var(--md-primary) 1px, transparent 1px);
+            background-size: 24px 24px; opacity: 0.03; pointer-events: none;
+        }
+
+        .pricing-inner {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 64px; align-items: center;
+            position: relative; z-index: 1;
+        }
+
+        .pricing-left h2 {
+            font-size: clamp(28px, 4vw, 40px); font-weight: 700;
+            line-height: 1.2; margin-bottom: 20px; color: var(--md-on-surface);
+        }
+        .pricing-left h2 .gradient-text {
+            background: linear-gradient(135deg, #4285f4, #a259ff);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .pricing-left > p {
+            font-size: 17px; color: var(--md-on-surface-variant);
+            line-height: 1.7; margin-bottom: 32px;
+        }
+
+        .pricing-benefits { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+        .pricing-benefits li {
+            display: flex; align-items: center; gap: 12px;
+            font-size: 15px; color: var(--md-on-surface);
+            transition: transform var(--md-motion-duration-short) var(--md-motion-standard);
+        }
+        .pricing-benefits li:hover { transform: translateX(4px); }
+        .pricing-benefits li i { font-size: 20px; color: var(--md-tertiary); flex-shrink: 0; }
+
+        .pricing-right { display: flex; justify-content: center; }
+
+        .pricing-card {
+            background: var(--md-surface); border-radius: 24px;
+            box-shadow: var(--shadow-floating); max-width: 400px; width: 100%;
+            overflow: hidden; border: 1px solid var(--md-outline);
+            transition: box-shadow var(--md-motion-duration-medium) var(--md-motion-emphasized),
+                        transform var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        .pricing-card:hover {
+            box-shadow: 0 8px 20px rgba(60,64,67,0.2), 0 2px 6px rgba(60,64,67,0.15);
+            transform: translateY(-6px);
+        }
+
+        .pricing-card-bar { height: 5px; background: linear-gradient(90deg, #4285f4, #a259ff, #ea4335); }
+        .pricing-card-body { padding: 32px; }
+
+        .pricing-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+        .pricing-card-header .plan-name { font-size: 19px; font-weight: 700; color: var(--md-on-surface); }
+        .pricing-card-header .plan-type { font-size: 13px; color: var(--md-on-surface-variant); margin-top: 2px; }
+        .pricing-card-header .best-value {
+            background: var(--md-primary-container); color: var(--md-primary);
+            font-size: 11px; font-weight: 700; padding: 4px 10px;
+            border-radius: var(--md-shape-xs); text-transform: uppercase;
+            letter-spacing: 0.8px; white-space: nowrap;
+        }
+
+        .pricing-card-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 24px; }
+        .pricing-card-price .amount { font-size: 42px; font-weight: 700; color: var(--md-on-surface); letter-spacing: -1px; }
+        .pricing-card-price .period { font-size: 15px; color: var(--md-on-surface-variant); }
+
+        .pricing-card-info {
+            background: var(--md-surface-dim); border: 1px solid var(--md-outline);
+            border-radius: var(--md-shape-sm); padding: 12px 14px;
+            font-size: 13px; color: var(--md-on-surface-variant); line-height: 1.5;
+            margin-bottom: 24px; display: flex; align-items: flex-start; gap: 8px;
+        }
+        .pricing-card-info i { color: var(--md-on-surface-variant); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+        .pricing-card-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+        .pricing-card-features li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--md-on-surface); }
+        .pricing-card-features li i { color: var(--md-primary); font-size: 16px; flex-shrink: 0; }
+
+        .pricing-card-secure {
+            text-align: center; margin-top: 16px; font-size: 12px;
+            color: var(--md-on-surface-variant);
+            display: flex; align-items: center; justify-content: center; gap: 4px;
+        }
+        .pricing-card-secure i { font-size: 14px; }
+
+        /* ============================================
+           FAQ
+           ============================================ */
+        .faq-section { padding: 80px 24px; max-width: 760px; margin: 0 auto; }
+        .faq-section .section-title { text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 48px; }
+        .faq-item {
+            border-bottom: 1px solid var(--md-outline); border-radius: var(--md-shape-sm);
+            margin-bottom: 4px;
+            transition: background var(--md-motion-duration-short) var(--md-motion-standard);
+        }
+        .faq-item:hover { background: rgba(26,115,232,0.04); }
+        .faq-item summary {
+            font-size: 16px; font-weight: 500; cursor: pointer; color: var(--md-on-surface);
+            list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 20px 12px;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary .faq-toggle {
+            font-size: 18px; color: var(--md-on-surface-variant);
+            transition: transform var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        .faq-item[open] summary .faq-toggle { transform: rotate(45deg); color: var(--md-primary); }
+        .faq-item .faq-answer {
+            padding: 0 12px 20px; font-size: 14px; color: var(--md-on-surface-variant); line-height: 1.7;
+            animation: faqReveal var(--md-motion-duration-medium) var(--md-motion-emphasized);
+        }
+        @keyframes faqReveal { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .navbar { padding: 12px 20px; }
+            .navbar-center {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                background: rgba(254,254,254,0.97); backdrop-filter: blur(16px);
+                flex-direction: column; padding: 12px 20px;
+                border-bottom: 1px solid var(--md-outline); box-shadow: var(--md-elevation-2);
+            }
+            .navbar-center.open { display: flex; }
+            .nav-toggle { display: block; }
+            .hero { padding: 56px 20px 40px; }
+            .bento-grid { grid-template-columns: 1fr; }
+            .bento-card.card-large { grid-column: span 1; }
+            .mini-cards-grid { grid-template-columns: 1fr; }
+            .bento-card .card-bg-icon { font-size: 120px; }
+            .stats-bar { gap: 24px; }
+            .steps-grid { grid-template-columns: 1fr; gap: 48px; }
+            .step-icon-wrapper { width: 80px; height: 80px; }
+            .step-icon-wrapper i { font-size: 30px; }
+            .hero::before, .hero::after { width: 200px; height: 200px; }
+            .navbar-cta-wrapper { order: 2; }
+            .navbar-limited-badge { top: -8px; right: -6px; font-size: 8px; }
+
+            /* Pricing responsive */
+            .pricing-inner { grid-template-columns: 1fr; gap: 40px; }
+            .pricing-left { text-align: center; }
+            .pricing-benefits {
+                align-items: flex-start;
+                display: inline-flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+            .pricing-card { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <a href="#" class="navbar-logo">
+        <span class="google-colors">
+            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+        </span>
+        <span class="ai-text">AI</span>
+        <span class="pro-badge">PRO</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <div class="navbar-center" id="navCenter">
+        <a href="#fitur" class="nav-link">Fitur</a>
+        <a href="#cara" class="nav-link">Cara Kerja</a>
+        <a href="#beli" class="nav-link">Harga</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+    </div>
+    <div class="navbar-cta-wrapper">
+        <span class="navbar-limited-badge">12 Bulan</span>
+        <a href="#beli" class="navbar-cta">
+            <span class="cta-text-carousel">
+                <span class="cta-text-slide">Beli Sekarang</span>
+                <span class="cta-text-slide">Limited Slot</span>
+            </span>
+        </a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-badge reveal stagger-1"><i class="bi bi-stars"></i> Slot Terbatas, Berlaku 12 Bulan</div>
+    <h1 class="reveal stagger-2">Akses Penuh ke<br><span class="highlight">Google AI Pro</span></h1>
+    <p class="reveal stagger-3">Dapetin 2 TB penyimpanan, Gemini paling canggih, Veo 3.1 buat bikin video, Deep Research, dan semua fitur AI premium Google selama 12 bulan. Cukup lewat invite email aja.</p>
+</section>
+
+<!-- Stats -->
+<div class="stats-bar">
+    <div class="stat-item reveal stagger-1"><div class="number">2 TB</div><div class="label">Cloud Storage</div></div>
+    <div class="stat-item reveal stagger-2"><div class="number">12 Bulan</div><div class="label">Masa Aktif</div></div>
+    <div class="stat-item reveal stagger-3"><div class="number">1.500</div><div class="label">Halaman Upload</div></div>
+    <div class="stat-item reveal stagger-4"><div class="number">1.000</div><div class="label">Poin AI / Bulan</div></div>
+</div>
+
+<!-- Features — Bento Grid -->
+<section class="features-section" id="fitur">
+    <h2 class="section-title reveal">Semua yang Kamu Dapetin</h2>
+    <p class="section-subtitle reveal stagger-2">Satu langganan. Semua kekuatan AI terbaik dari Google langsung di tangan kamu.</p>
+
+    <div class="bento-grid">
+        <div class="bento-card card-large reveal-scale stagger-1">
+            <div class="card-content">
+                <div class="card-icon icon-white"><i class="bi bi-cloud-fill"></i></div>
+                <div class="tag">UNGGULAN</div>
+                <h3>2 TB Penyimpanan Cloud</h3>
+                <p>Pake buat Google Foto, Drive, sama Gmail. Simpan foto, file, email, dan data penting kamu dengan aman di cloud. Satu tempat buat semuanya.</p>
+            </div>
+            <i class="bi bi-cloud-fill card-bg-icon"></i>
+        </div>
+        <div class="bento-card card-accent reveal stagger-2">
+            <div class="card-content">
+                <div class="card-icon icon-gradient"><i class="bi bi-cpu"></i></div>
+                <h3>Gemini & Deep Research</h3>
+                <p>Kerja tanpa gangguan dengan akses yang lebih luas ke fitur Gemini, termasuk Deep Research. Bantu kamu hemat waktu buat ngerjain project yang kompleks.</p>
+            </div>
+        </div>
+        <div class="bento-card reveal stagger-3">
+            <div class="card-content">
+                <div class="card-icon icon-white-pink"><i class="bi bi-camera-reels"></i></div>
+                <div class="tag">BARU</div>
+                <h3>Veo 3.1 Video Generation</h3>
+                <p>Ubah kata-kata kamu jadi video 8 detik langsung di Gemini pakai Veo 3.1, model video generation terbaru. Tinggal deskripsiin aja, ide kamu langsung jadi video.</p>
+            </div>
+        </div>
+        <div class="bento-card reveal stagger-4">
+            <div class="card-content">
+                <div class="card-icon icon-white-indigo"><i class="bi bi-file-earmark-text"></i></div>
+                <h3>Upload sampai 1.500 Halaman</h3>
+                <p>Pahami riset, buku teks, laporan industri, dan lainnya dengan context window 1 juta token. Analisis informasi lebih efisien buat ngatasi masalah yang rumit.</p>
+            </div>
+        </div>
+        <div class="bento-card reveal stagger-5">
+            <div class="card-content">
+                <div class="card-icon icon-white-red"><i class="bi bi-lightning-charge-fill"></i></div>
+                <h3>Gemini Mode Thinking + Pro</h3>
+                <p>Jauh lebih jago di penalaran logis, analisis, coding, dan kolaborasi kreatif. Kamu bisa selesaiin lebih banyak kerjaan dalam waktu lebih singkat.</p>
+            </div>
+        </div>
+        <div class="bento-card reveal stagger-6">
+            <div class="card-content">
+                <div class="card-icon icon-white-green"><i class="bi bi-journal-richtext"></i></div>
+                <h3>Gemini Canggih di NotebookLM</h3>
+                <p>Akses model Gemini yang lebih powerful buat riset kompleks di NotebookLM. Upload materi kamu dan biarkan Gemini bantu riset dari berbagai sumber sekaligus.</p>
+            </div>
+        </div>
+        <div class="bento-card reveal stagger-7">
+            <div class="card-content">
+                <div class="card-icon icon-white"><i class="bi bi-envelope-paper"></i></div>
+                <h3>Ringkasan AI & Cek Grammar di Gmail</h3>
+                <p>Tanya apa aja di inbox kamu dan dapetin jawaban lewat Ringkasan AI. Plus, pake fitur cek grammar buat rapihin tulisan sebelum kirim email.</p>
+            </div>
+        </div>
+        <div class="bento-card reveal stagger-8">
+            <div class="card-content">
+                <div class="card-icon icon-white-green"><i class="bi bi-webcam"></i></div>
+                <h3>Upgrade Kualitas Google Meet</h3>
+                <p>Kualitas video naik otomatis. Noise berkurang, gambar lebih tajam, pencahayaan lebih bagus. Bonus: video call grup bisa lebih lama dan sepuasnya dari 1 jam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mini-cards-grid">
+        <div class="mini-card reveal stagger-9"><i class="bi bi-check-circle-fill"></i><span>Gemini Pro</span></div>
+        <div class="mini-card reveal stagger-10"><i class="bi bi-check-circle-fill"></i><span>NanoBananaPro</span></div>
+        <div class="mini-card reveal stagger-10"><i class="bi bi-check-circle-fill"></i><span>Veo 3.1</span></div>
+        <div class="mini-card reveal stagger-11"><i class="bi bi-check-circle-fill"></i><span>Antigravity</span></div>
+    </div>
+</section>
+
+<!-- How it works -->
+<section class="how-section" id="cara">
+    <div class="section-header">
+        <h2 class="section-title reveal">Cara Dapetin Aksesnya</h2>
+        <p class="section-subtitle reveal stagger-2">Proses simpel 3 langkah buat upgrade akun kamu.</p>
+    </div>
+    <div class="steps-wrapper">
+        <div class="steps-line" id="stepsLine"></div>
+        <div class="steps-grid">
+            <div class="step reveal stagger-3">
+                <div class="step-icon-wrapper">
+                    <i class="bi bi-bag-check-fill"></i>
+                    <span class="step-badge">1</span>
+                </div>
+                <h3>Beli Invite Link</h3>
+                <p>Klik tombol beli dan hubungi kami via WhatsApp. Proses cepat dan gampang.</p>
+            </div>
+            <div class="step reveal stagger-4">
+                <div class="step-icon-wrapper">
+                    <i class="bi bi-envelope-check-fill"></i>
+                    <span class="step-badge">2</span>
+                </div>
+                <h3>Buka Invite Email</h3>
+                <p>Setelah pembayaran dikonfirmasi, cek inbox kamu dan klik invite link yang dikirim.</p>
+            </div>
+            <div class="step reveal stagger-5">
+                <div class="step-icon-wrapper">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                    <span class="step-badge">3</span>
+                </div>
+                <h3>Langsung Pakai</h3>
+                <p>Semua fitur Gemini premium, 2 TB storage, Veo 3.1, dan lainnya langsung aktif selama 12 bulan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing-section" id="beli">
+    <div class="pricing-dot-pattern"></div>
+    <div class="pricing-inner">
+        <div class="pricing-left reveal stagger-1">
+            <h2>AI Premium.<br><span class="gradient-text">Harga Terjangkau.</span></h2>
+            <p>Dapetin benefit yang sama persis kayak langganan resmi Google AI Pro lewat slot invite link eksklusif kami. Legal, aman, dan instan.</p>
+            <ul class="pricing-benefits">
+                <li><i class="bi bi-check-circle-fill"></i> Langganan Resmi Google</li>
+                <li><i class="bi bi-check-circle-fill"></i> Data Privat (Gak ada file yang dishare)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Support via WhatsApp</li>
+                <li><i class="bi bi-check-circle-fill"></i> Invite link dikirim maks 1x24 jam</li>
+            </ul>
+        </div>
+        <div class="pricing-right">
+            <div class="pricing-card reveal-scale stagger-3">
+                <div class="pricing-card-bar"></div>
+                <div class="pricing-card-body">
+                    <div class="pricing-card-header">
+                        <div>
+                            <div class="plan-name">AI Premium (2TB)</div>
+                            <div class="plan-type">Invite Link</div>
+                        </div>
+                        <span class="best-value">Best Value</span>
+                    </div>
+                    <div class="pricing-card-price">
+                        <span class="amount">Rp 15.000</span>
+                        <span class="period">/ sekali bayar</span>
+                    </div>
+                    <div class="pricing-card-info">
+                        <i class="bi bi-info-circle"></i>
+                        <span>Berlaku 12 bulan sejak aktivasi. Perpanjang manual setelah masa aktif habis.</span>
+                    </div>
+                    <ul class="pricing-card-features">
+                        <li><i class="bi bi-check-circle-fill"></i> Invite link dikirim ke email</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Aktif 12 bulan penuh</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 2 TB penyimpanan Google</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Gemini Pro + Deep Research</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Veo 3.1 pembuatan video</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 1.000 poin AI per bulan</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Semua fitur premium</li>
+                    </ul>
+                    <a href="https://wa.me/6281234228779?text=Halo%20kak%2C%20saya%20mau%20beli%20invite%20link%20Google%20AI%20Pro%20(2TB)%20yang%20harganya%20Rp%2015.000.%0AEmail%20Google%3A%20%0AMohon%20infokan%20cara%20pembayarannya%20kak%2C%20terima%20kasih" target="_blank" class="btn-whatsapp">
+                        <i class="bi bi-whatsapp"></i> Beli via WhatsApp
+                    </a>
+                    <div class="pricing-card-secure">
+                        <i class="bi bi-lock-fill"></i>
+                        Pembayaran Aman & Terenkripsi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+    <h2 class="section-title reveal">Pertanyaan yang Sering Ditanyain</h2>
+
+    <details class="faq-item reveal stagger-1">
+        <summary>Invite link Google AI Pro itu apa sih? <i class="bi bi-plus-lg faq-toggle"></i></summary>
+        <div class="faq-answer">Invite link itu link khusus yang dikirim ke email kamu. Tinggal klik aja, dan langganan Google AI Pro langsung aktif di akun Google kamu.</div>
+    </details>
+    <details class="faq-item reveal stagger-2">
+        <summary>Ini akun Google resmi bukan? <i class="bi bi-plus-lg faq-toggle"></i></summary>
+        <div class="faq-answer">Iya, invite link ini mengaktifkan fitur AI Pro langsung di akun Google asli kamu. Semua fitur sepenuhnya dikelola oleh Google.</div>
+    </details>
+    <details class="faq-item reveal stagger-3">
+        <summary>Invite link-nya dikirim berapa lama? <i class="bi bi-plus-lg faq-toggle"></i></summary>
+        <div class="faq-answer">Setelah pembayaran dikonfirmasi, invite link bakal dikirim maksimal 1x24 jam ke email yang kamu daftarin.</div>
+    </details>
+    <details class="faq-item reveal stagger-4">
+        <summary>Berapa lama invite link-nya aktif? <i class="bi bi-plus-lg faq-toggle"></i></summary>
+        <div class="faq-answer">Invite link Google AI Pro yang kamu beli berlaku selama 12 bulan penuh sejak aktivasi. Setelah masa aktif habis, kamu bisa beli invite link lagi.</div>
+    </details>
+    <details class="faq-item reveal stagger-5">
+        <summary>Perlu bayar langganan bulanan ke Google juga? <i class="bi bi-plus-lg faq-toggle"></i></summary>
+        <div class="faq-answer">Kamu cuma bayar Rp 15.000 buat invite link ke kami. Jadi langganan bulanan Google AI Pro itu sudah mencakup semuanya dan kamu bisa langsung nikmatin langsung.</div>
+    </details>
+</section>
+
+<!-- Scripts -->
+<script>
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-scale').forEach(el => revealObserver.observe(el));
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    const navToggle = document.getElementById('navToggle');
+    const navCenter = document.getElementById('navCenter');
+    navToggle.addEventListener('click', () => {
+        navCenter.classList.toggle('open');
+        const icon = navToggle.querySelector('i');
+        icon.classList.toggle('bi-list');
+        icon.classList.toggle('bi-x-lg');
+    });
+    navCenter.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navCenter.classList.remove('open');
+            const icon = navToggle.querySelector('i');
+            icon.classList.add('bi-list');
+            icon.classList.remove('bi-x-lg');
+        });
+    });
+
+    const stepsLine = document.getElementById('stepsLine');
+    if (stepsLine) {
+        const lineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => stepsLine.classList.add('animate'), 400);
+                    lineObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        lineObserver.observe(stepsLine);
+    }
+</script>
+
+</body>
+</html>
