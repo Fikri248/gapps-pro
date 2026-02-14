@@ -119,13 +119,9 @@
         .navbar.scrolled { box-shadow: var(--md-elevation-2); }
 
         .navbar-logo {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 22px;
-            font-weight: 500;
-            color: var(--md-on-surface);
-            text-decoration: none;
+            display: flex; align-items: center; gap: 6px;
+            font-size: 22px; font-weight: 500;
+            color: var(--md-on-surface); text-decoration: none;
         }
         .navbar-logo .google-colors span:nth-child(1) { color: var(--google-blue); }
         .navbar-logo .google-colors span:nth-child(2) { color: var(--google-red); }
@@ -136,16 +132,14 @@
 
         .navbar-logo .ai-text {
             font-weight: 400; font-size: 20px;
-            color: var(--md-on-surface-variant);
-            margin-left: 2px; letter-spacing: -0.3px;
+            color: var(--md-on-surface-variant); margin-left: 2px; letter-spacing: -0.3px;
         }
         .navbar-logo .pro-badge {
             display: inline-flex; align-items: center;
             background: linear-gradient(135deg, #4285f4, #a259ff);
             color: white; padding: 3px 12px; border-radius: var(--md-shape-xs);
             font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
-            text-transform: uppercase; margin-left: 4px;
-            position: relative; top: -1px;
+            text-transform: uppercase; margin-left: 4px; position: relative; top: -1px;
         }
 
         .navbar-center { display: flex; align-items: center; gap: 4px; }
@@ -159,9 +153,7 @@
         .nav-link:hover { background: var(--md-primary-container); color: var(--md-primary); }
         .nav-link:active { background: #c2d9f7; }
 
-        /* ============================================
-           NAVBAR CTA — ANIMATED
-           ============================================ */
+        /* NAVBAR CTA */
         .navbar-cta-wrapper { position: relative; display: inline-flex; align-items: center; }
         .navbar-cta {
             background: linear-gradient(135deg, #4285f4, #7c3aed);
@@ -255,10 +247,32 @@
         }
 
         .hero h1 { font-size: clamp(36px,5vw,56px); font-weight: 700; line-height: 1.15; margin-bottom: 20px; }
+
+        /* ============================================
+           ANIMATED RGB GRADIENT TEXT
+           ============================================ */
         .hero h1 .highlight {
-            background: linear-gradient(135deg, #4285f4, #a259ff, #ea4335);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            background: linear-gradient(
+                90deg,
+                #4285f4,
+                #a259ff,
+                #ea4335,
+                #fbbc05,
+                #34a853,
+                #4285f4
+            );
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: rgbShift 6s linear infinite;
         }
+
+        @keyframes rgbShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+
         .hero p { font-size: 18px; color: var(--md-on-surface-variant); max-width: 640px; margin: 0 auto; line-height: 1.7; }
 
         /* ============================================
@@ -414,10 +428,8 @@
            PRICING SECTION
            ============================================ */
         .pricing-section {
-            padding: 96px 24px;
-            background: var(--md-surface-dim);
-            position: relative;
-            overflow: hidden;
+            padding: 96px 24px; background: var(--md-surface-dim);
+            position: relative; overflow: hidden;
         }
 
         .pricing-dot-pattern {
@@ -429,8 +441,7 @@
         .pricing-inner {
             max-width: 1100px; margin: 0 auto;
             display: grid; grid-template-columns: 1fr 1fr;
-            gap: 64px; align-items: center;
-            position: relative; z-index: 1;
+            gap: 64px; align-items: center; position: relative; z-index: 1;
         }
 
         .pricing-left h2 {
@@ -442,8 +453,7 @@
             -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
         .pricing-left > p {
-            font-size: 17px; color: var(--md-on-surface-variant);
-            line-height: 1.7; margin-bottom: 32px;
+            font-size: 17px; color: var(--md-on-surface-variant); line-height: 1.7; margin-bottom: 32px;
         }
 
         .pricing-benefits { list-style: none; display: flex; flex-direction: column; gap: 16px; }
@@ -557,15 +567,11 @@
             .hero::before, .hero::after { width: 200px; height: 200px; }
             .navbar-cta-wrapper { order: 2; }
             .navbar-limited-badge { top: -8px; right: -6px; font-size: 8px; }
-
-            /* Pricing responsive */
             .pricing-inner { grid-template-columns: 1fr; gap: 40px; }
             .pricing-left { text-align: center; }
             .pricing-benefits {
-                align-items: flex-start;
-                display: inline-flex;
-                flex-direction: column;
-                margin: 0 auto;
+                align-items: flex-start; display: inline-flex;
+                flex-direction: column; margin: 0 auto;
             }
             .pricing-card { max-width: 100%; }
         }
