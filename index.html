@@ -1303,6 +1303,32 @@
                 padding: 6px 12px;
                 font-size: 11px;
             }
+
+            /* Fix dropdown clipping */
+            .gemini-mockup {
+                overflow: visible;
+            }
+
+            .gemini-mockup-bar {
+                border-radius: 16px 16px 0 0;
+            }
+
+            .gemini-mockup-body {
+                border-radius: 0 0 16px 16px;
+                overflow: visible;
+            }
+
+            .gm-speed-dropdown {
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%) translateY(8px) scale(0.96);
+                width: calc(100vw - 80px);
+                max-width: 280px;
+            }
+
+            .gm-speed-dropdown.open {
+                transform: translateX(-50%) translateY(0) scale(1);
+            }
         }
 
 
