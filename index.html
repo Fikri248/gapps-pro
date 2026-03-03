@@ -1304,7 +1304,6 @@
                 font-size: 11px;
             }
 
-            /* Fix dropdown clipping */
             .gemini-mockup {
                 overflow: visible;
             }
@@ -1318,16 +1317,27 @@
                 overflow: visible;
             }
 
+            /* Pindah positioning context ke input box */
+            .gm-speed-wrapper {
+                position: static;
+            }
+
+            .gm-input-box {
+                position: relative;
+            }
+
+            /* Dropdown full-width ngikutin input box */
             .gm-speed-dropdown {
-                right: auto;
-                left: 50%;
-                transform: translateX(-50%) translateY(8px) scale(0.96);
-                width: calc(100vw - 80px);
-                max-width: 280px;
+                left: 0;
+                right: 0;
+                width: auto;
+                max-width: none;
+                bottom: calc(100% + 8px);
+                transform: translateY(8px) scale(0.96);
             }
 
             .gm-speed-dropdown.open {
-                transform: translateX(-50%) translateY(0) scale(1);
+                transform: translateY(0) scale(1);
             }
         }
 
